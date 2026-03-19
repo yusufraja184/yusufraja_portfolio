@@ -984,3 +984,31 @@ body.light-mode .matrix-bg {
         font-size: 1.1rem;
     }
 }
+
+/* Project Link Button */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.project-link:hover {
+    background: var(--color-green);
+    border-color: var(--color-green);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--color-green-glow);
+}
+body.light-mode .project-link {
+    background: rgba(0,0,0,0.05);
+    color: var(--text-primary);
+}
