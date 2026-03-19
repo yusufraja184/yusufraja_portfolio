@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf | Data Science Engineer Portfolio</title>
+    <link rel="stylesheet" href="yusuf_portfolio.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- High-Tech Matrix Background -->
+    <canvas id="matrix-canvas" class="matrix-bg"></canvas>
+
+    <!-- Background Decor -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Yusuf<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="greeting">👋 Welcome to my portfolio</p>
+            <h1 class="main-title">Hi, I'm <span class="gradient-text">Yusuf</span></h1>
+            <h2 class="subtitle">B.Tech <span class="typing-text" id="typing-text">Data Science Engineer</span><span class="typing-cursor">|</span></h2>
+            <p class="description">Student at <strong>Lovely Professional University</strong>. Passionate about Artificial Intelligence, Data Structures & Algorithms, and translating raw data into meaningful solutions.</p>
+            
+            <div class="hero-buttons">
+                <a href="yusuf_cv.pdf" download class="btn btn-primary">
+                    <span><i class="fas fa-file-download"></i> Download CV</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Contact Me <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-image-container">
+            <div class="image-wrapper">
+                <img src="yusuf.jpeg" alt="Yusuf Portrait" id="profile-pic" onerror="this.onerror=null; this.src='https://via.placeholder.com/400?text=Yusuf'">
+                <!-- Orbiting Rings -->
+                <div class="ring ring-1"></div>
+                <div class="ring ring-2"></div>
+                <div class="ring ring-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="gradient-text">Me</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a highly motivated <strong>B.Tech Data Science Engineering</strong> student currently studying at <strong>Lovely Professional University</strong>. My core interest lies in building robust systems, analyzing large datasets, and uncovering hidden patterns.</p>
+                    <p>With a strong foundation in problem-solving and programming languages like <strong>C++</strong> and <strong>Python</strong>, I strive to write efficient and optimized code. I am passionate about technology and continually expanding my knowledge in the fast-paced world of Data Science.</p>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-card hover-blue">
+                        <i class="fas fa-code stat-icon"></i>
+                        <h3>Algorithms</h3>
+                        <p>DSA Expert</p>
+                    </div>
+                    <div class="stat-card hover-green">
+                        <i class="fas fa-chart-line stat-icon"></i>
+                        <h3>Data Analytics</h3>
+                        <p>Data Insights</p>
+                    </div>
+                    <div class="stat-card hover-orange">
+                        <i class="fas fa-database stat-icon"></i>
+                        <h3>Data Science</h3>
+                        <p>SQL & Analytics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="gradient-text">Toolkit</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Python -->
+                <div class="skill-card color-blue fade-in">
+                    <div class="skill-top">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                
+                <!-- C++ -->
+                <div class="skill-card color-orange fade-in">
+                    <div class="skill-top">
+                        <i class="fas fa-file-code skill-icon"></i>
+                        <h3>C++</h3>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- SQL -->
+                <div class="skill-card color-green fade-in">
+                    <div class="skill-top">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h3>SQL</h3>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <!-- DSA -->
+                <div class="skill-card color-blue fade-in">
+                    <div class="skill-top">
+                        <i class="fas fa-project-diagram skill-icon"></i>
+                        <h3>DSA</h3>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" style="width: 88%;"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-tag tag-blue">Data Science</div>
+                        <h3>Predictive Analytics Model</h3>
+                        <p>Developed a robust data analytics pipeline to analyze complex datasets, utilizing Python and Pandas to extract actionable insights.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Data Analysis</span>
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-tag tag-green">Algorithms</div>
+                        <h3>Optimized PathFinder</h3>
+                        <p>Engineered an advanced path-finding algorithm in C++ applying complex Data Structures, reducing compute time and efficiently routing data nodes.</p>
+                        <div class="tech-stack">
+                            <span>C++</span>
+                            <span>DSA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card fade-in">
+                    <div class="project-content">
+                        <div class="project-tag tag-orange">Database</div>
+                        <h3>Interactive Data Dashboard</h3>
+                        <p>Designed a robust SQL database backend paired with a dynamic reporting layer, capable of processing and analyzing real-time complex queries.</p>
+                        <div class="tech-stack">
+                            <span>SQL</span>
+                            <span>Analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2>Verified <span class="gradient-text">Certificates</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="cert-grid">
+                <a href="certificate1.pdf" target="_blank" class="cert-card stagger-in">
+                    <div class="cert-icon-wrapper blue-glow">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Information Cert</h3>
+                    <p>View Document <i class="fas fa-external-link-alt"></i></p>
+                </a>
+                
+                <a href="certificate2.pdf" target="_blank" class="cert-card stagger-in">
+                    <div class="cert-icon-wrapper orange-glow">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Infosys Cert</h3>
+                    <p>View Document <i class="fas fa-external-link-alt"></i></p>
+                </a>
+                
+                <a href="certificate3.pdf" target="_blank" class="cert-card stagger-in">
+                    <div class="cert-icon-wrapper green-glow">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Social Networks Cert</h3>
+                    <p>View Document <i class="fas fa-external-link-alt"></i></p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's <span class="gradient-text">Connect!</span></h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-panel">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to build something amazing? Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <div class="social-links left-align">
+                        <a href="https://www.linkedin.com/in/yusuf-raja-a31b07299/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/yusufraja184" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="mailto:rajayusuf184@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        <span>Send Message <i class="fas fa-paper-plane"></i></span>
+                    </button>
+                    <div id="form-response" class="form-response"></div>
+                </form>
+            </div>
+            
+            <p class="copyright">&copy; 2026 Yusuf Portfolio. All rights reserved.</p>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="yusuf_portfolio.js"></script>
+</body>
+</html>
